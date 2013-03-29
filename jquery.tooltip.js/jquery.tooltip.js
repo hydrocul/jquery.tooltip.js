@@ -48,7 +48,7 @@
 				tooltip = $('<div/>')
 					.attr( 'id', 'jToolTip' )
 					.html( title )
-					.appendTo( elem );
+					.insertAfter( elem );
 				// ブラウザにかぶるときは位置反転
 				if ( e.pageX + tooltip.width() > getWindowWidth() - 50 ) {
 					posX = e.pageX - tooltip.width() - 30;
